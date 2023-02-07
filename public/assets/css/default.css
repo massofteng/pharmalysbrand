@@ -1,0 +1,577 @@
+/*===theme default===*/
+html, body {
+    scroll-behavior: smooth;
+    height: 100%
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@font-face {
+    font-family: 'suisse_intlsemibold';
+    src: url('../fonts/custom-font/suisseintl-semibold-webfont.woff2') format('woff2'),
+    url('../fonts/custom-font/suisseintl-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'suisse_intlregular';
+    src: url('../fonts/custom-font/suisseintl-regular-webfont.woff2') format('woff2'),
+    url('../fonts/custom-font/suisseintl-regular-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+
+}
+
+body {
+
+    font-family: 'suisse_intlregular', sans-serif;
+    font-style: normal;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000000;
+
+}
+
+.container-fluid {
+    max-width: 1460px;
+}
+
+.container {
+    max-width: 1210px;
+}
+
+.container {
+    max-width: 1210px;
+}
+
+.v-full-width .container, .v-full-width.container {
+    max-width: 1940px;
+}
+
+.v-app ul {
+    margin: 0 0 15px 30px;
+}
+
+.v-app ul li {
+    position: relative;
+    padding: 10px 0;
+    /*list-style: none;*/
+}
+
+/*.v-app ul li:before {*/
+/*    font-family: "Font Awesome 5 Free", serif;*/
+/*    content: "\f14a";*/
+/*    display: inline-block;*/
+/*    vertical-align: middle;*/
+/*    font-weight: 900;*/
+/*    left: -25px;*/
+/*    position: absolute;*/
+/*    color: #faab35;*/
+/*}*/
+
+.br-35 {
+    border-radius: 35px;
+}
+
+.ls-1 {
+    letter-spacing: 1px;
+}
+
+.img, img {
+    max-width: 100%;
+    transition: all 0.3s ease-out 0s;
+}
+
+a, .button {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+a:focus, .button:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+a:focus, a:hover {
+    color: #091d56;
+    text-decoration: none;
+}
+
+a, button {
+    color: #1696e7;
+    outline: medium none;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+    color: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 32px;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+hr {
+    border-bottom: 1px solid #eceff8;
+    border-top: 0 none;
+    margin: 15px 0;
+    padding: 0;
+}
+
+label {
+    color: #7e7e7e;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+*::-moz-selection {
+    background: #d6b161;
+    color: #fff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #444;
+    color: #fff;
+    text-shadow: none;
+}
+
+::selection {
+    background: #444;
+    color: #fff;
+    text-shadow: none;
+}
+
+*::-moz-placeholder {
+    color: #555555;
+    font-size: 14px;
+    opacity: 1;
+}
+
+*::placeholder {
+    color: #555555;
+    font-size: 14px;
+    opacity: 1;
+}
+
+.v-transition {
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.v-img-left {
+    position: relative;
+    left: -12px;
+}
+
+.v-img-right {
+    position: relative;
+    right: -12px;
+}
+
+/*button*/
+.v-btn-1 {
+    background: #003A8C;
+    padding: 12px 35px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.v-btn-2 {
+    background: #00CC88;
+    padding: 12px 35px;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.v-btn-1:hover, .v-btn-2:hover {
+    cursor: pointer;
+    color: #f1f1f1;
+    background: #0fa4ff;
+}
+
+/*button*/
+
+/*shadow and color*/
+.v-shadow {
+    transition: .2s;
+    border-radius: 15px;
+    box-shadow: 0 0 36px 0 #64646480;
+}
+
+.v-shadow:hover {
+    box-shadow: 0 0 50px -16px #63636380;
+}
+
+.v-select-shadow {
+    box-shadow: 16px 16px 32px rgba(0, 42, 102, 0.1), 0px 32px 64px rgba(0, 58, 140, 0.1);
+}
+
+.bg-blue-shade {
+    background: #F2F5F9;
+}
+
+.bg-blue {
+    background: #003A8C;
+}
+
+.color-blue {
+    color: #003A8C;
+}
+
+.color-blue-shade {
+    color: #6689BA;
+}
+
+.color-black-shade {
+    color: #737373;
+}
+
+/*shadow and color*/
+/*font weight and size*/
+.vf-400 {
+    font-weight: 400;
+}
+
+.vf-600 {
+    font-weight: 600;
+}
+
+.vfs-24 {
+    font-size: 24px;
+}
+
+.vfs-28 {
+    font-size: 28px;
+}
+
+.vfs-64 {
+    font-size: 64px;
+}
+
+.lh-30 {
+    line-height: 30px;
+}
+
+.lh-35 {
+    line-height: 35px;
+}
+
+.lh-36 {
+    line-height: 36px;
+}
+
+.lh-80 {
+    line-height: 80px;
+}
+
+.v-heading {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+}
+
+.v-sub-heading {
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 48px;
+}
+
+.v-title {
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.v-sub-title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.v-details {
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.v-body {
+    font-size: 20px;
+    line-height: 32px;
+}
+
+.v-box-title {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+
+/*font weight and size*/
+/*===theme default===*/
+/*width*/
+
+.mw-245 {
+    max-width: 245px;
+}
+
+.mw-360 {
+    max-width: 360px;
+}
+
+.mw-400 {
+    max-width: 400px;
+}
+
+.mw-480 {
+    max-width: 480px;
+}
+
+.mw-570 {
+    max-width: 570px;
+}.mw-575 {
+    max-width: 575px;
+}
+.mw-595 {
+    max-width: 595px;
+}
+.mw-710{
+    max-width: 710px;
+}
+.mw-720 {
+    max-width: 720px;
+}
+
+/*width*/
+/*===padding ===*/
+.pt-70 {
+    padding-top: 70px;
+}
+
+.pt-90 {
+    padding-top: 90px;
+}
+
+.pt-150 {
+    padding-top: 150px;
+}
+
+.pt-160 {
+    padding-top: 160px;
+}
+
+.pt-170 {
+    padding-top: 170px;
+}
+
+.pt-210 {
+    padding-top: 210px;
+}
+.pb-50 {
+    padding-bottom: 50px;
+}
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+.pb-70 {
+    padding-bottom: 70px;
+}
+
+.pb-90 {
+    padding-bottom: 90px;
+}
+
+.pb-135 {
+    padding-bottom: 135px;
+}
+
+
+.pb-150 {
+    padding-bottom: 150px;
+}
+
+.pb-160 {
+    padding-bottom: 160px;
+}
+
+.ps-220 {
+    padding-left: 220px;
+}
+
+.pb-240 {
+    padding-bottom: 240px;
+}
+
+.pl {
+}
+
+.pr {
+}
+
+/*===padding ===*/
+/*===margin===*/
+.mt-80 {
+    margin-top: 80px;
+}
+
+.mb {
+}
+
+
+.ms-80 {
+    margin-left: 80px;
+}
+
+.ms-160 {
+    margin-left: 160px;
+}
+
+.ms-190 {
+    margin-left: 190px;
+}
+
+.me {
+}
+
+.me-185 {
+    margin-right: 185px;
+}
+
+.ms-220 {
+    margin-left: 220px;
+}
+
+/*===margin===*/
+
+/*===padding ===*/
+
+/*arrow*/
+.arrow {
+    height: 2px;
+    width: 16px;
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-bottom: 4px;
+    transition: all .4s ease;
+}
+
+.widget li a:hover .arrow {
+    width: 22px;
+    margin-right: 13px;
+    opacity: 1;
+}
+
+
+.v-arrow {
+    background: #003A8C;
+}
+
+.v-circle .arrow {
+    top: 1px;
+}
+
+.arrow:before,
+.arrow:after {
+    content: "";
+    background: #003A8C;
+    position: absolute;
+    height: 2px;
+    width: 10px;
+    border-radius: 30%;
+}
+
+.arrow:before {
+    right: -2px;
+    bottom: -3px;
+    transform: rotate(-45deg);
+}
+
+.arrow:after {
+    right: -2px;
+    top: -3px;
+    transform: rotate(45deg);
+}
+
+.v-circle {
+    border: 1px solid #003A8C;
+    display: inline-block;
+    border-radius: 35px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding: 10px;
+    margin-right: 20px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.v-link:hover .v-circle {
+    border: 1px solid transparent;
+    margin-right: 10px;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+}
+
+.v-link:hover .arrow {
+    width: 30px;
+}
+
+.v-link {
+    color: #003A8C;
+}
+
+/*border after hover*/
+.v-link-after:after {
+    content: '';
+    background: #003A8C;
+    width: 0;
+    height: 2px;
+    position: absolute;
+    z-index: 1;
+    -webkit-transition: all .5s ease-in-out;
+    transition: all .5s ease-in-out;
+    left: 30%;
+    top: 50%;
+
+
+}
+
+.v-link-after:hover:after {
+    width: 67%;
+    left: 36%;
+
+}
+
+.v-link-after:hover {
+    padding-left: 30px;
+    color: #003A8C !important;
+}
+
+/*border after hover*/
