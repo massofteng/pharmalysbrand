@@ -1,1 +1,1 @@
-# pharmalys-corporate-website
+# pharmalys-brand-website
