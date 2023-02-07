@@ -1,0 +1,41 @@
+name: Pharmalys Corporate Website Development
+
+on:
+  # push:
+  #   branches: [ "develop" ]
+  pull_request:
+    branches: [ "develop" ]
+    types:
+      - closed
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+
+      - name: Cloudways API Git Pull
+        uses: roelmagdaleno/cloudways-api-git-pull-action@stable
+        with:
+          email: ${{ secrets.CW_DEV_EMAIL }}
+          api-key: ${{ secrets.CW_DEV_API_KEY }}
+          server-id: ${{ secrets.CW_DEV_SERVER_ID }}
+          app-id: ${{ secrets.CW_DEV_APP_ID }}
+          branch-name: ${{ secrets.CW_DEV_BRANCH }}
+          deploy-path: ''
+
+
+      - name: Executing Linux Commands
+        uses: appleboy/ssh-action@v0.1.5
+        with:
+          host: ${{ secrets.CW_DEV_HOST }}
+          username: ${{ secrets.CW_DEV_SSH_USER }}
+          port: 22
+          password: ${{ secrets.CW_DEV_SSH_PASS }}
+          # key: ${{ secrets.PROD_SSH_KEY }}
+          script: |
+            /usr/bin/php /home/892276.cloudwaysapps.com/scrazztanz/public_html/artisan optimize:clear
+            echo "done...."

@@ -1,0 +1,52 @@
+{
+  "name": "shamimshams/translation-manager",
+  "description": "A translation manager",
+  "license": "MIT",
+  "keywords": [
+    "translation",
+    "manager"
+  ],
+  "type": "library",
+  "authors": [
+    {
+      "name": "Shamim Shams",
+      "email": "shamim.dhoha@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=8.0.2",
+    "illuminate/support": "^8.0|^9.0",
+    "livewire/livewire": "^2.0",
+    "psr/simple-cache":"^2.0",
+    "maatwebsite/excel": "^3.1"
+
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^8.4|^9.5.10"
+  },
+  "autoload": {
+    "psr-4": {
+      "ShamimShams\\TranslationManager\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+    
+    }
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "ShamimShams\\TranslationManager\\TranslationManagerServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}

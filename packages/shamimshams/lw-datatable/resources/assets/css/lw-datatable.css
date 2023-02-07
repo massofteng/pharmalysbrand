@@ -1,0 +1,52 @@
+table>thead .sorting,
+table>thead .sorting_asc,
+table>thead .sorting_desc,
+table>thead .sorting_asc_disabled,
+table>thead .sorting_desc_disabled {
+    cursor: pointer;
+    position: relative
+}
+
+table>thead .sorting:before,
+table>thead .sorting:after,
+table>thead .sorting_asc:before,
+table>thead .sorting_asc:after,
+table>thead .sorting_desc:before,
+table>thead .sorting_desc:after,
+table>thead .sorting_asc_disabled:before,
+table>thead .sorting_asc_disabled:after,
+table>thead .sorting_desc_disabled:before,
+table>thead .sorting_desc_disabled:after {
+    position: absolute;
+    bottom: .9em;
+    display: block;
+    opacity: .3
+}
+
+table>thead .sorting:before,
+table>thead .sorting_asc:before,
+table>thead .sorting_desc:before,
+table>thead .sorting_asc_disabled:before,
+table>thead .sorting_desc_disabled:before {
+    right: 1em;
+    content: "↑"
+}
+
+table>thead .sorting:after,
+table>thead .sorting_asc:after,
+table>thead .sorting_desc:after,
+table>thead .sorting_asc_disabled:after,
+table>thead .sorting_desc_disabled:after {
+    right: .5em;
+    content: "↓"
+}
+
+table>thead .sorting_asc:before,
+table>thead .sorting_desc:after {
+    opacity: 1
+}
+
+table>thead .sorting_asc_disabled:before,
+table>thead .sorting_desc_disabled:after {
+    opacity: 0
+}
